@@ -2,13 +2,13 @@ pipeline{
   agent any 
   stages{
     stage('Test'){
-      step{
+      steps{
         echo "Hello world"
         input "Do you like to proceed?"
       }
     }
     stage('production'){
-      step{
+      steps{
         echo "Successfully production Tested"
       }
     }
